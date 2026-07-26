@@ -13,17 +13,18 @@ METTI IL DOIIIII
 
 Il progetto consiste nella pulizia e analisi esplorativa di un dataset di metadati bibliografici. 
 
-L'obiettivo principale di questo progetto è la pulizia e riordino, con finalità di analisi e pubblicazione aperta. Le domande di ricerca proposte andranno ad analizzare la distribuzione di genere, esplorare l'evoluzione dei temi trattati nel tempo all'interno delle pubblicazioni dal 1900 ad oggi, e se siano occorse variazioni significative ed identificare se esiste una relazione tra gli editori e riviste rispetto alle licenze utilizzate.
+L'obiettivo principale di questo progetto è la pulizia e riordino, con finalità di analisi e pubblicazione aperta. Le domande di ricerca proposte andranno ad analizzare la distribuzione di genere, esplorare l'evoluzione dei temi trattati nel tempo all'interno delle pubblicazioni dal 1900 ad oggi e se siano occorse variazioni significative, ed identificare se esiste una relazione tra gli editori e riviste rispetto alle licenze utilizzate.
 
 ### Quali sono i risultati?
 
-- **Analizzare** la distribuzione di genere all'interno delle pubblicazioni presenti nel dataset.
-- **Esplorare** l'evoluzione dei temi trattati nel tempo all'interno delle pubblicazioni, e se ci siano state delle variazioni significative.
-- **Identificare** se esiste una relazione tra gli editori e riviste rispetto alle licenze Open Access.
+- L'analisi di come la distribuzione di genere all'interno delle pubblicazioni presenti nel dataset si stia muovendo verso una maggiore inclusività.
+- La correzione di colonne che presentavano dei dati non omogenei e misti, e la gestione dei dati nulli presenti all'interno del dataset.
+- Osservare le scelte degli editori rispetto agli argomenti e alle licenze.
 
 ## Fonte dei dati
 
 ### Descrizione dei dati
+
 Il dataset contiene le informazioni catalografiche delle pubblicazioni, tra cui identificativi, titoli, autori, genere dell'autore, editori, anni di pubblicazione e consistenza delle pagine.
 
 | Variabile           | Tipo     |	Definizione                      | Esempio |
@@ -44,6 +45,7 @@ Il dataset contiene le informazioni catalografiche delle pubblicazioni, tra cui 
 |url_disponibili      |	object   |eventuali siti correlati                |http://www.ricerchedisconfine.info/index.htm
 
 ### Citazione e link alle fonti dei dati utilizzati
+
 I dati sono in formato CSV.
 - **Link alla fonte:** https://raw.githubusercontent.com/dhdmch/2025-2026/refs/heads/main/data/lispod/data.csv
 
@@ -53,20 +55,22 @@ Il progetto è stato sviluppato in un ambiente Google Colab utilizzando il lingu
 
 ### Le operazioni includono:
 
-- Caricamento e ispezione dei dati (df.info(), df.describe());
-- Bonifica e normalizzazione dei dati (conversione in Int64, gestione dei dati nulli);
+- Caricamento e ispezione dei dati (`df.info()`, `df.describe()`);
+- Bonifica e normalizzazione dei dati (conversione in `Int64`, gestione dei dati nulli);
 - Creazione di nuove variabili (pubblicazione_prima, volume_info, pagina_inizio, autore_sesso);
-- Analisi esplorativa tramite aggregazioni (value_counts()) e visualizzazioni tramite diversi grafici;
+- Analisi esplorativa tramite aggregazioni (`value_counts()`) e visualizzazioni tramite diversi grafici;
 - Analisi esplicativa focalizzata sull'evoluzione per decennio di genere, pubblicazioni e analisi dell'uso delle licenze;
 
 ### Strumenti utilizzati:
-- **Linguaggio di programmazione:** Python
-- **Ambiente di sviluppo:** Notebook Colab
+
+- **Linguaggio di programmazione:** `Python`
+- **Ambiente di sviluppo:** `Notebook Colab`
 - **Librerie per l'analisi dati e la manipolazione:** `pandas`, `numpy`
 - **Librerie per la visualizzazione grafica:** `matplotlib`
-- **Controllo versione e Open Science:** GitHub, Zenodo
+- **Controllo versione e Open Science:** `GitHub`, `Zenodo`
 
 ## Responsabili
+
 - **Ambra Martiri** -  Autore/Studentessa
 
 ## Licenza
