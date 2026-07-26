@@ -4,7 +4,7 @@
 **Analisi esplorativa dei metadati bibliografici, dinamiche di genere ed evoluzione temporale**
 
 ## DOI
- DOI: 10.5281/zenodo.21609103
+DOI: 10.5281/zenodo.21609103
 
 ## Descrizione
 
